@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Wallet & Banking React Mobile App With RTL</title>
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/scrollbar.css" rel="stylesheet" />
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--[if lt IE 9
+            ]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script
+        ><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <style type="text/css">
+        .card {
+            box-shadow: 0 0px 4px rgba(0, 0, 0, 0.24);
+            margin-bottom: 1.875rem;
+            border-radius: 0;
+            padding: 26px;
+        }
+
+        .card-header {
+            padding: 0px 0px 19px 2px;
+            font-size: 22px;
+            font-weight: bold;
+            border-bottom: #80808073 1px solid;
+            margin-bottom: 15px;
+        }
+
+        code {
+            padding: 2px 4px;
+            color: #d14;
+            white-space: nowrap;
+            background-color: #f7f7f9;
+            border: 1px solid #e1e1e8;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Page Wrapper-->
+    <div class="page-wrapper">
+        <!--Sidebar-->
+        <aside id="sidebar">
+            <!--Toggle Button-->
+            <div class="button-container clearfix">
+                <div class="menu-toggle flaticon-menu10"></div>
+            </div>
+
+            <!--Menu Box-->
+            <div class="menu-box">
+                <!--Logo-->
+                <br />
+                <div class="logo text-left">
+                    <a href="#">BankApp</a>
+                </div>
+
+                <!--Sticky Menu-->
+                <nav class="sticky-menu">
+                    <ul>
+                        <li class="current">
+                            <a href="#introduction"><span class="fa fa-arrow-right"></span>Introduction </a>
+                        </li>
+                        <li>
+                            <a href="#getstarting">Getting Started <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#logonav">Re Usable Compoennts <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#sectionchange">Alert Service <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#blogdata">Change Routes<span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#Feature-card">Features <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#sources-credits">Sources and Credits <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#support">Support <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="copyright">Copyright &copy; <a href="#">BankApp</a> 2023</div>
+        </aside>
+
+        <div id="content-section">
+            <!--Introduction Section-->
+            <section class="section introduction" id="introduction">
+                <div class="sec-title">
+                    <h2>Intoduction</h2>
+                </div>
+
+                <br />
+                <div class="sec-content">
+                    <h2>BankApp</h2>
+                    <h3>BankApp - Wallet & Banking React Mobile App With RTL</h3>
+
+                    <div class="separator"></div>
+
+                    <strong>Created Date:</strong> 13/08/2020<br />
+                    <strong>Updated Date:</strong> 21/03/2023<br />
+                    <strong>By :</strong> s7template<br />
+
+                    <br />
+                    <p>
+                        Thank you for purchasing <strong>BankApp</strong> - BankApp is an elegant, modern and fully
+                        customizable Walet & Banking React Mobile App Powered by Bootstrap 4X.
+                        If you have any questions that are beyond the scope of
+                        this help file, please feel free to email, via my user page contact form
+                        or put a ticket at Support Center .<br />Thank you so much!
+                    </p>
+                </div>
+            </section>
+
+            <!--HTML Structure-->
+            <section class="section" id="getstarting" style="width: 95%; margin: 0 auto;">
+                <div class="sec-title">
+                    <h2>Getting Started</h2>
+                </div>
+
+                <br />
+                <div class="card">
+                    <div class="card-header">
+                        Installation
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><b>Node.js and NPM :</b> You can download Node.js from https://nodejs.org. NPM comes
+                                bundled with Node.js.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Install Npm Packages
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><b>NPM :</b> You must have to <code>npm install</code> packages. You can do this by
+                                running npm install from the root of your project to install all the necessary
+                                dependencies.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Development server
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Run <code> npm start </code> for a dev server. Navigate to http://localhost:3000/ . The
+                                app will automatically reload if you change any of the source files.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Build
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Run <code>npm run build</code> to build the project. The build artifacts will be stored
+                                in the build/ directory. Use the <code> npm run build --prod </code> flag for a
+                                production build.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--CSS Structure-->
+            <section class="section css-structure" id="logonav">
+                <div class="sec-title">
+                    <h2>Re Usable Compoennts</h2>
+                </div>
+
+                <br />
+                <div class="sec-content">
+                    <p>All the re-usable components are located to layout folder. You just have to import the components
+                        to use them. See the Image</p>
+
+                    <div class="html-code">
+                        <br>
+                        <img src="images/re-usable.png" alt="image html" />
+                    </div>
+                </div>
+            </section>
+
+            <!--Javascript-->
+            <section class="section javascript" id="sectionchange">
+                <div class="sec-title">
+                    <h2>Usefull Alert Service</h2>
+                </div>
+
+                <br />
+                <div class="sec-content">
+                    <P>We've made a customized Alert Service with toastr. You can use this service for notifications and
+                        other alert operations. See images below</P>
+
+                    <div class="html-code">
+                        <br>
+                        <img src="images/alert-service.png" alt="image html" />
+                    </div>
+                </div>
+            </section>
+
+            <!--contact-form Settings-->
+            <section class="section map-settings" id="blogdata">
+                <div class="sec-content">
+                    <div class="sec-title">
+                        <h2>Change Routes</h2>
+                    </div>
+
+                    <br />
+                    <p>You'll get all the routes for individual components in this file. Located in src->routes.js</p>
+                    <div class="html-code">
+                        <br>
+                        <img src="images/routes.png" alt="image html" />
+                    </div>
+                </div>
+            </section>
+
+            <!--Feature area-->
+            <section class="section sources-credits" id="Feature-card">
+                <div class="sec-title">
+                    <h2>Features</h2>
+                </div>
+
+                <br />
+                <div class="sec-content">
+                    <ul>
+                        <li>SASS File Included</li>
+                        <li>RTL View</li>
+                        <li>Clean markup</li>
+                        <li>7 different components</li>
+                        <li>User friendly design</li>
+                        <li>100% pixel perfect design</li>
+                        <li>Clean and Simple Style</li>
+                        <li>Smooth transition effects.</li>
+                        <li>Cross Browser Optimization.</li>
+                        <li>Google font.</li>
+                        <li>Compatible Browsers – IE9+, Chrome, Safari, Opera, Firefox</li>
+                        <li>Documentation – Yes</li>
+                        <li>License – GPL</li>
+                        <li>Version – 1.0.0</li>
+                        <li>Files Included -html, JS, css</li>
+                        <li>User Friendly Code</li>
+                        <li>Easy to customize</li>
+                        <li>W3C Validation</li>
+                        <li>Clean &amp; Modern Design</li>
+                        <li>CSS3 animations</li>
+                        <li>Full Responsive</li>
+                        <li>SEO friendly code</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--Sources and Credits-->
+            <section class="section sources-credits" id="sources-credits">
+                <div class="sec-title">
+                    <h2>Sources and Credits</h2>
+                </div>
+
+                <br />
+                <div class="sec-content">
+                    <h3>
+                        Fonts Used int the template are google fonts, you can find theme on
+                        Google Fonts API
+                    </h3>
+
+                    <p><strong>Font Used:</strong></p>
+                    <ul>
+                        <li><a href="https://fonts.google.com/specimen/Raleway">Raleway</a></li>
+                    </ul>
+
+                    <ul class="source-files">
+                        <li><a href="https://reactrouter.com/web/guides/quick-start" target="_blank"
+                                title="React Router Dom">React Router Dom</a></li>
+                        <li><a href="https://github.com/CodeSeven/toastr" target="_blank" title="Toastr">Toastr</a></li>
+                        <li><a href="http://www.getbootstrap.com/" target="_blank" title="Bootstrap">Bootstrap</a></li>
+                        <li><a href="https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html"
+                                target="_blank" title="OwlCarousel2">OwlCarousel2</a></li>
+                        <li><a href="https://kenwheeler.github.io/slick/" target="_blank" title="slick Slider">Slick
+                                Slider</a></li>
+                        <li><a href="https://fonts.google.com/" target="_blank" title="Google Fonts">Google Fonts</a>
+                        </li>
+                        <li><a href="https://fontawesome.com/v4.7.0/">Font Awesome</a></li>
+                        <li><a href="https://icons8.com/line-awesome">Line Awesome</a></li>
+                    </ul>
+
+                    <br>
+
+                    <br>
+
+                    <p><strong> Sliders Used Are :</strong></p>
+                    <p>
+                        Owl Carousel (
+                        <a href="https://owlcarousel2.github.io/OwlCarousel2/demos/demos.html">Owl Carousel</a> )
+                    </p>
+                    <p>
+                        Slick Slider (
+                        <a href="https://kenwheeler.github.io/slick/">Slick Slider</a> )
+                    </p>
+                    <br>
+                    Every Code is properly commented for Editing Ease.
+                </div>
+            </section>
+
+            <!--Support-->
+            <section class="section support" id="support">
+                <div class="sec-title">
+                    <h2>Support</h2>
+                </div>
+
+                <br />
+                <div class="sec-content">
+                    <h3>
+                        Once again, thank you so much for purchasing this theme. As I said at
+                        the beginning, I'd be glad to help you if you have any questions
+                        relating to this theme. No guarantees, but I'll do my best to assist. If
+                        you have any queries, please feel free to contact us at Support Center.
+                        <strong>support@s7template.com</strong>
+                    </h3>
+
+                    <p>Email Us at : <a href="#">support@s7template.com</a></p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--End pagewrapper-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/scrollbar.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

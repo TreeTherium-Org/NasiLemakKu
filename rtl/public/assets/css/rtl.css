@@ -1,0 +1,244 @@
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+.section-title {
+    text-align: right;
+}
+
+.section-title .title {
+    float: right;
+}
+
+.section-title a {
+    float: left;
+}
+
+.ba-navbar {
+    left: auto;
+    right: -370px;
+}
+
+.ba-navbar.ba-navbar-show {
+    left: auto;
+    right: 0;
+}
+
+.ba-navbar .ba-navbar-user .menu-close {
+    right: auto;
+    left: 20px;
+}
+
+.ba-add-balance-title p {
+    float: left;
+}
+
+.ba-navbar .ba-main-menu h5 {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.ba-navbar .ba-main-menu ul li a {
+    padding-right: 25px;
+    text-align: right;
+}
+
+.ba-navbar .ba-main-menu ul li a::before {
+    right: 0;
+}
+
+.ba-navbar .ba-main-menu ul li a::after {
+    left: 0;
+    right: auto;
+}
+
+.ba-navbar .ba-navbar-user .details {
+    text-align: right;
+}
+
+.ba-navbar .ba-navbar-user .thumb {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.header-right li {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.ba-add-balance-title h5 {
+    float: right;
+}
+
+.ba-add-balance-title i {
+    float: left;
+}
+
+.single-goal .details {
+    text-align: right;
+}
+
+.single-goal::after {
+    right: 0;
+}
+
+.single-goal .circle-inner {
+    float: left;
+    border-right: 1px solid #ececec;
+}
+
+.single-goal .circle-inner h6 {
+    margin-right: 0;
+    padding-left: 10px;
+}
+
+.ba-single-history {
+    text-align: right;
+}
+
+.ba-cart-inner {
+    text-align: right;
+}
+
+.ba-single-transaction .amount {
+    left: 20px;
+    text-align: left;
+}
+
+.ba-single-transaction .thumb {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.ba-single-transaction .details {
+    text-align: right;
+}
+
+.ba-bill-pay-inner .ba-single-bill-pay .details {
+    text-align: left;
+}
+
+.ba-bill-pay-inner .amount-inner h5 {
+    float: right;
+}
+
+.ba-bill-pay-inner .ba-single-bill-pay .details {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.ba-bill-pay-inner .ba-single-bill-pay .thumb {
+    margin-right: 0;
+}
+
+.ba-bill-pay-inner .amount-inner a {
+    float: left;
+}
+
+
+/******* about page *********/
+
+.about-content-inner {
+    text-align: right;
+}
+
+
+/******* all page ********/
+
+.ba-all-page-inner h5 {
+    text-align: right;
+}
+
+.ba-all-page-inner ul li a {
+    padding-left: 0;
+    padding-right: 25px;
+    text-align: right;
+}
+
+.ba-all-page-inner ul li a::before {
+    right: 0;
+}
+
+.ba-all-page-inner ul li a::after {
+    left: 0;
+    right: auto;
+    content: '\f104';
+}
+
+.ba-all-page-inner.style-two ul li a::before {
+    content: "\f100";
+}
+
+.ba-all-page-inner.style-three ul li a::before {
+    content: "\f100";
+}
+
+.single-blog {
+    text-align: right;
+}
+
+.blog-details-inner {
+    text-align: right;
+}
+
+.alert .close {
+    left: 10px;
+    right: auto;
+}
+
+.accordion-icon.icon-02 .card-title {
+    text-align: right;
+}
+
+.accordion-icon.icon-02 .card-header::before {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+.accordion-icon.icon-01 .card-header::before {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+.widget {
+    text-align: right;
+}
+
+.contact-form-inner {
+    text-align: right;
+}
+
+.single-checkbox-wrap input {
+    float: right;
+    margin-right: 0;
+    margin-left: 4px;
+}
+
+.transaction-details-inner .transaction-details-title .float-left {
+    padding-top: 0;
+}
+
+.transaction-details-inner .transaction-details-title .float-right {
+    padding-top: 6px;
+}
+
+.balance-area-bg .edit-title {
+    left: 10px;
+}
+
+.ba-single-transaction.style-two .amount {
+    left: 0;
+    right: auto;
+}
+
+.add-balance-inner-wrap .input-group {
+    position: relative;
+}
+
+.add-balance-inner-wrap .input-group-prepend {
+    position: absolute;
+    left: 0;
+    z-index: 9999;
+    height: 100%;
+}

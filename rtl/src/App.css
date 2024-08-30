@@ -1,0 +1,7 @@
+.header-area {
+    top: 0 !important;
+}
+
+.ba-navbar-show {
+    z-index: 9999 !important;
+}
