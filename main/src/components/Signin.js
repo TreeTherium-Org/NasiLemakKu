@@ -50,7 +50,7 @@ class Signin extends Component {
             // Redirect to home page
             this.props.history.push("/");
         } catch (error) {
-            console.error("Error signing in with provider:", error);
+            console.error("Error signin in with provider:", error);
             this.setState({ error: error.message });
         }
     }

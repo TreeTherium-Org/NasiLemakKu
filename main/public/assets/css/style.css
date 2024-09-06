@@ -31,6 +31,9 @@ Version: 1.0.0
     # Typography
 ----------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,500i,600,600i,700,700&display=swap");
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
 :root {
   --main-color: #6236ff;
   --heading-color: #474747;
@@ -4444,3 +4447,43 @@ span.badge-pulse-orange {
 .btn-facebook:hover {
     background-color: #005a9e;
 }
+/*FIND RESTAURANT PAGE IMAGE SLIDER*/
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 300px; /* Adjust as needed */
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-image {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover; /* Adjust based on your needs */
+}
+
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.slider-nav button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.slider-nav button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
