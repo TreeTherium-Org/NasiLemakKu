@@ -26,6 +26,7 @@ import Transaction from "./components/Transaction";
 import TransactionDetails from "./components/TransactionDetails";
 import UserSetting from "./components/UserSetting";
 import UserVerification from "./components/UserVerification";
+import AnalyticsPage from './components/AnalyticsPage';
 
 class Routes extends Component {
     render() {
@@ -58,6 +59,7 @@ class Routes extends Component {
                         <Route exact path={'/transaction-details'} render={(props) => (<TransactionDetails {...props} />)} />
                         <Route exact path={'/user-setting'} render={(props) => (<UserSetting {...props} />)} />
                         <Route exact path={'/user-verification'} render={(props) => (<UserVerification {...props} />)} />
+                        <Route exact path="/analytics" component={AnalyticsPage} />
                     </Switch>
                 </HashRouter>
             </Router>
