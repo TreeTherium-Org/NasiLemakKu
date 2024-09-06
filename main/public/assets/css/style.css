@@ -636,7 +636,7 @@ ul {
   color: #fff; }
 
 .btn-green {
-  background: #1dcc70;
+  background: #16423C;
   color: #fff; }
 
 .readmore-btn {
@@ -689,7 +689,7 @@ ul {
     .section-title a i {
       font-size: 20px; }
     .section-title a.sub-delete {
-      color: #ff396f; }
+      color: #16423C; }
   .section-title.style-two .title {
     color: #fff; }
   .section-title.style-two a {
@@ -1025,7 +1025,7 @@ ul {
 
 .ba-page-name h3 {
   color: #fff;
-  background: #ff396f;
+  background: #16423C;
   padding: 17px;
   margin-bottom: 0; }
 
@@ -1877,7 +1877,7 @@ ul {
 
 /************* signin ***********/
 .contact-form-inner {
-  background: #fff;
+  background: #C4DAD2;
   padding: 40px 20px; }
   .contact-form-inner .btn {
     height: 45px;
@@ -4407,3 +4407,40 @@ span.badge-pulse-orange {
   background-color: #5cb85c;
   color: #fff;
   border-color: #5cb85c; }
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+  
+.social-button img {
+    width: auto;
+    height: 24px;
+    margin-right: 10px;
+}
+  
+.btn-google {
+    background-color: #4285F4;
+}
+  
+.btn-facebook {
+    background-color: #0078D4;
+}
+  
+.btn-google:hover {
+    background-color: #357ae8;
+}
+  
+.btn-facebook:hover {
+    background-color: #005a9e;
+}
