@@ -54,6 +54,7 @@ class FindRestaurant extends Component {
     const map = new window.google.maps.Map(document.getElementById('map'), {
       center: location,
       zoom: 15,
+      disableDefaultUI: true, // Hides extra controls for a cleaner mobile view
     });
 
     this.setState({ map }, () => {
@@ -68,8 +69,6 @@ class FindRestaurant extends Component {
       id: doc.id,
       ...doc.data(),
     }));
-
-    console.log(restaurantList); // Debug output
 
     this.setState({ restaurants: restaurantList }, () => {
       this.displayMarkers(location);
@@ -92,8 +91,8 @@ class FindRestaurant extends Component {
       }
 
       const position = {
-        lat: restaurant.location.latitude, // Adjust if using different GeoPoint access
-        lng: restaurant.location.longitude // Adjust if using different GeoPoint access
+        lat: restaurant.location.latitude,
+        lng: restaurant.location.longitude,
       };
 
       const marker = new window.google.maps.Marker({
@@ -133,39 +132,50 @@ class FindRestaurant extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{ position: 'relative', height: '100vh', overflow: 'hidden' }}>
         <input
           id="location-input"
           type="text"
           placeholder="Enter a location"
           style={{
             position: 'absolute',
-            top: '20px',
-            left: '20px',
+            top: '10px',
+            left: '10px',
             padding: '10px',
             zIndex: 1000,
-            width: '300px',
+            width: 'calc(100% - 80px)',
+            maxWidth: '400px',
             borderRadius: '5px',
             border: '1px solid #16423C',
+            fontSize: '16px',
           }}
         />
         <button
           onClick={this.resetLocationSearch}
           style={{
             position: 'absolute',
-            top: '20px',
-            left: '340px',
+            top: '10px',
+            right: '10px',
             padding: '10px',
             zIndex: 1000,
             borderRadius: '5px',
             border: '1px solid #ccc',
             color: '#E9EFEC',
             backgroundColor: '#16423C',
+            fontSize: '16px',
           }}
         >
-          Back / Enter New Place
+          Back
         </button>
-        <div id="map" style={{ width: '100%', height: '100vh', minHeight: '500px' }}></div>
+        <div
+          id="map"
+          style={{
+            width: '100%',
+            height: 'calc(100% - 60px)',
+            minHeight: '400px',
+            marginTop: '60px',
+          }}
+        ></div>
       </div>
     );
   }
