@@ -632,7 +632,7 @@ ul {
   color: #fff; }
 
 .btn-purple {
-  background: #7c00cf;
+  background: #16423C;
   color: #fff; }
 
 .btn-green {
@@ -660,7 +660,6 @@ ul {
   background: #f2f2f2; }
 
 .bg-user-setting:after {
-  background-image: url("/../assets/img/bg/9.png") !important;
   background-size: cover !important;
   background-position: center !important;
   border-radius: 5px; }
@@ -1025,7 +1024,7 @@ ul {
 
 .ba-page-name h3 {
   color: #fff;
-  background: #ff396f;
+  background: #16423C;
   padding: 17px;
   margin-bottom: 0; }
 
@@ -1458,7 +1457,7 @@ ul {
   color: #fff; }
 
 .bg-user-setting::after {
-  background-image: url("../../assets/img/bg/9.png") !important; }
+  /*background-image: url("../../assets/img/bg/9.png")*/ }
 
 .balance-title {
   padding: 18px 0 12px 0; }
@@ -1877,7 +1876,7 @@ ul {
 
 /************* signin ***********/
 .contact-form-inner {
-  background: #fff;
+  background: #C4DAD2;
   padding: 40px 20px; }
   .contact-form-inner .btn {
     height: 45px;
@@ -4407,3 +4406,123 @@ span.badge-pulse-orange {
   background-color: #5cb85c;
   color: #fff;
   border-color: #5cb85c; }
+
+  .social-buttons {
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Spacing between buttons */
+  }
+  
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 350px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-button img {
+    width: auto;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .btn-google {
+    background-color: #4285F4;
+  }
+  
+  .btn-facebook {
+    background-color: #0078D4;
+  }
+  
+  .btn-google:hover {
+    background-color: #357ae8;
+  }
+  
+  .btn-facebook:hover {
+    background-color: #005a9e;
+  }
+
+  .btn-phantom-wallet {
+    background-color: #ab9ff2;
+  }
+
+  .btn-phantom-wallet:hover {
+    background-color: #357ae8;
+  }
+
+  /* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure it is above other content */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  max-width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+}
+
+.modal-content label {
+  display: block;
+  margin: 10px 0;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.modal-content button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #6200ea; /* Purple color */
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.modal-content button:hover {
+  background-color: #3700b3; /* Darker purple on hover */
+}
+
+.modal-content button + button {
+  margin-left: 10px;
+  background-color: #aaa; /* Cancel button color */
+}
+
+.modal-content button + button:hover {
+  background-color: #888;
+}
+
+  
