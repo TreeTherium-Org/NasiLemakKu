@@ -25,6 +25,7 @@ import Signup from "./components/Signup";
 import Transaction from "./components/Transaction";
 import TransactionDetails from "./components/TransactionDetails";
 import UserSetting from "./components/UserSetting";
+import RestaurantSetting from "./components/RestaurantSetting";
 import UserVerification from "./components/UserVerification";
 import LocationSearch from './components/LocationSearch';
 import FindRestaurant from './components/FindRestaurant';
@@ -59,6 +60,7 @@ class Routes extends Component {
                         <Route exact path={'/transaction'} render={(props) => (<Transaction {...props} />)} />
                         <Route exact path={'/transaction-details'} render={(props) => (<TransactionDetails {...props} />)} />
                         <Route exact path={'/user-setting'} render={(props) => (<UserSetting {...props} />)} />
+                        <Route exact path={'/restaurant-setting'} render={(props) => (<RestaurantSetting {...props} />)} />
                         <Route exact path={'/user-verification'} render={(props) => (<UserVerification {...props} />)} />
                         <Route exact path={'/location-search'} render={(props) => (<LocationSearch {...props} />)} />
                         <Route exact path={'/find-restaurant'} render={(props) => (<FindRestaurant {...props} />)} />

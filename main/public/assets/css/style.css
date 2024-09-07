@@ -31,9 +31,6 @@ Version: 1.0.0
     # Typography
 ----------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,500i,600,600i,700,700&display=swap");
-@import '~slick-carousel/slick/slick.css';
-@import '~slick-carousel/slick/slick-theme.css';
-
 :root {
   --main-color: #6236ff;
   --heading-color: #474747;
@@ -635,11 +632,11 @@ ul {
   color: #fff; }
 
 .btn-purple {
-  background: #7c00cf;
+  background: #16423C;
   color: #fff; }
 
 .btn-green {
-  background: #16423C;
+  background: #1dcc70;
   color: #fff; }
 
 .readmore-btn {
@@ -663,7 +660,6 @@ ul {
   background: #f2f2f2; }
 
 .bg-user-setting:after {
-  background-image: url("/../assets/img/bg/9.png") !important;
   background-size: cover !important;
   background-position: center !important;
   border-radius: 5px; }
@@ -692,7 +688,7 @@ ul {
     .section-title a i {
       font-size: 20px; }
     .section-title a.sub-delete {
-      color: #16423C; }
+      color: #ff396f; }
   .section-title.style-two .title {
     color: #fff; }
   .section-title.style-two a {
@@ -1461,7 +1457,7 @@ ul {
   color: #fff; }
 
 .bg-user-setting::after {
-  background-image: url("../../assets/img/bg/9.png") !important; }
+  /*background-image: url("../../assets/img/bg/9.png")*/ }
 
 .balance-title {
   padding: 18px 0 12px 0; }
@@ -4411,79 +4407,122 @@ span.badge-pulse-orange {
   color: #fff;
   border-color: #5cb85c; }
 
-.social-button {
+  .social-buttons {
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Spacing between buttons */
+  }
+  
+  .social-button {
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
     border-radius: 5px;
     padding: 10px;
-    width: 250px;
+    width: 350px;
     cursor: pointer;
     font-size: 16px;
     color: white;
     font-weight: bold;
     transition: background-color 0.3s ease;
-}
+  }
   
-.social-button img {
+  .social-button img {
     width: auto;
-    height: 24px;
+    height: 30px;
     margin-right: 10px;
-}
+  }
   
-.btn-google {
+  .btn-google {
     background-color: #4285F4;
-}
+  }
   
-.btn-facebook {
+  .btn-facebook {
     background-color: #0078D4;
-}
+  }
   
-.btn-google:hover {
+  .btn-google:hover {
     background-color: #357ae8;
-}
+  }
   
-.btn-facebook:hover {
+  .btn-facebook:hover {
     background-color: #005a9e;
-}
-/*FIND RESTAURANT PAGE IMAGE SLIDER*/
-.slider {
-  position: relative;
-  overflow: hidden;
+  }
+
+  .btn-phantom-wallet {
+    background-color: #ab9ff2;
+  }
+
+  .btn-phantom-wallet:hover {
+    background-color: #357ae8;
+  }
+
+  /* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 300px; /* Adjust as needed */
-}
-
-.slider-wrapper {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slider-image {
-  min-width: 100%;
   height: 100%;
-  object-fit: cover; /* Adjust based on your needs */
-}
-
-.slider-nav {
-  position: absolute;
-  top: 50%;
-  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure it is above other content */
 }
 
-.slider-nav button {
-  background: rgba(0, 0, 0, 0.5);
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  max-width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+}
+
+.modal-content label {
+  display: block;
+  margin: 10px 0;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.modal-content button {
+  margin-top: 15px;
+  padding: 10px 20px;
   border: none;
+  background-color: #6200ea; /* Purple color */
   color: white;
-  padding: 10px;
   cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
 }
 
-.slider-nav button:hover {
-  background: rgba(0, 0, 0, 0.8);
+.modal-content button:hover {
+  background-color: #3700b3; /* Darker purple on hover */
 }
 
+.modal-content button + button {
+  margin-left: 10px;
+  background-color: #aaa; /* Cancel button color */
+}
+
+.modal-content button + button:hover {
+  background-color: #888;
+}
+
+  
