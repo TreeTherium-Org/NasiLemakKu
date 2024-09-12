@@ -11,8 +11,6 @@ class Home extends Component {
                 {/* Navigation Bar Imported from Layouts */}
                 <Navbar />
 
-                {/* Auto Notification Imported from layout */}
-                <AutoNotification />
 
                 {/* Header Starts */}
                 <div className="header-area" style={{backgroundImage: "url(assets/img/bg/1.png)"}}>
